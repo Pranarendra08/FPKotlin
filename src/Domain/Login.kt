@@ -20,7 +20,6 @@ class Login : inter{
             verifikasi()
         } else {
             println("Hai $Username, Mau nonton film apa?")
-            println(Username?.length)
         }
     }
 
