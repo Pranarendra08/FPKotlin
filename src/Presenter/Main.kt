@@ -11,7 +11,7 @@ import Domain.Login
 
 
 fun main() {
-    var ulang = "Y"
+    var ulang: String?
     val scan = Scanner(System.`in`)
 
     println("Selamat datang di program pembelian tiket Bioskop")
@@ -23,10 +23,10 @@ fun main() {
         Menu().pilihFilm()
 
         println("Apakah anda ingin membeli Tiket lagi? (Y/N)")
-        var ulang = readLine().toString()
-        if (ulang == "Y" || ulang == "y"){
+        ulang = scan.nextLine()
+        if (ulang!! == "Y" || ulang!! == "y"){
             continue
-        } else if (ulang == "N" || ulang == "n") {
+        } else if (ulang!! == "N" || ulang!! == "n") {
             break
         } else {
             println("Opps anda salah memasukkan input")
@@ -34,7 +34,7 @@ fun main() {
             break
         }
 
-    } while (ulang == "Y" || ulang == "y")
+    } while (ulang!! == "Y" || ulang!! == "y")
 
     println("Terima kasih")
 

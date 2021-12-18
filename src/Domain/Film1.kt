@@ -1,7 +1,5 @@
 package Domain
 
-import Domain.Film
-
 class Film1 : Film {
     private var Studio: String
     private var Jam: String
