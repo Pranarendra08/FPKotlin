@@ -19,10 +19,10 @@ class Menu {
         print("\nBerapa jumlah tiket yang ingin anda beli : ")
         Jumlah = scan.nextLine()
         try {
-            val f1 = Film1("Spider-Man: No way Home", "148 Menit", "A", "13.00", 40000, Jumlah.toInt())
-            val f2 = Film2("Ghostbusters: Afterlife", "124 Menit", "B", "16.00", 40000, Jumlah.toInt())
-            val f3 = Film3("The Boss Baby: Family Bussiness", "107 Menit", "C", "19.00", 40000, Jumlah.toInt())
-            val f4 = Film4("Encanto", "109 Menit", "D", "13.00", 40000, Jumlah.toInt())
+            val f1 = Film1("Spider-Man: No way Home", "148 Menit", "A", "13.00", 50000, Jumlah?.toInt())
+            val f2 = Film2("Ghostbusters: Afterlife", "124 Menit", "B", "16.00", 45000, Jumlah?.toInt())
+            val f3 = Film3("The Boss Baby: Family Bussiness", "107 Menit", "C", "19.00", 40000, Jumlah?.toInt())
+            val f4 = Film4("Encanto", "109 Menit", "D", "13.00", 40000, Jumlah?.toInt())
 
             when(Pilihan.toInt()) {
                 1 -> {
